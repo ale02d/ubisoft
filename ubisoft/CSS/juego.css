@@ -1,0 +1,540 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(12, 12, 12);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+
+.nav-link {
+  color: white;
+  position: relative;
+  padding-bottom: 5px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.4s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #ccc;
+}
+
+
+.dropdown-menu {
+  background-color: #000000;
+  border: none;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #000000;
+}
+
+
+
+
+
+
+
+.BannerPremium {
+  width: 93%;                
+  max-width: 1300px;        
+  height: 310px;            
+  margin: 35px auto;        
+  background: url('https://store.ubisoft.com/on/demandware.static/-/Library-Sites-shared-library-web/default/dw1cc7b86c/ACSH/ESP_PremiumBanner.jpg')
+              center/cover no-repeat;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px;
+  color: white;
+  position: relative;
+}
+
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text {
+  max-width: 500px;
+}
+
+.banner-text .logo-banner {
+  width: 90px;   
+  margin-bottom: 15px;
+}
+
+.banner-text h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.banner-text p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .BannerPremium {
+    height: auto;
+    padding: 30px;
+  }
+
+  .banner-text .logo-banner {
+    width: 90px;  
+  }
+
+  .banner-text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* === SECCIÓN COMPARAR EDICIONES === */
+.comparar-ediciones {
+position: relative;
+background: url('https://preview.redd.it/assassins-creed-shadows-snowy-kyoto-is-beautiful-at-night-v0-tspxsbzfwdre1.jpg?width=1080&crop=smart&auto=webp&s=1956cb6af7d4f084200e6cca523c9a9a61601175') center/cover no-repeat;
+padding: 80px 0;
+text-align: center;
+
+}
+
+
+
+ 
+
+.comparar-ediciones h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+
+}
+
+.ediciones {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+  
+}
+
+.edicion {
+  background: #1d1e20;
+  width: 300px;
+  border-radius: 9px;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+
+
+.edicion img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  
+}
+
+.contenido {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.contenido h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contenido ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contenido ul li {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #ddd;
+  margin-bottom: 2px;
+}
+
+.contenido ul li img {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.precios {
+  text-align: center;
+  margin-top: auto; 
+  margin-bottom: 8px;
+}
+
+.precios .viejo {
+  display: block;
+  color: #888;
+  font-size: 0.85rem;
+  text-decoration: line-through;
+  margin-bottom: 3px;
+}
+
+.precios .nuevo {
+  color: #ff8a00;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 6px; 
+}
+
+.contenido button {
+  width: 90%; 
+  margin: 0 auto 10px auto; 
+  display: block;
+  background-color: #00c04b;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contenido button:hover {
+  background-color: #00e85f;
+}
+
+
+.plataforma {
+  width: 93%;                
+  max-width: 1300px;        
+  height: 310px;            
+  margin: 35px auto;        
+  background: url('https://optigg.fr/wp-content/uploads/2025/04/focus-notes-final-1024x256.jpg')center/cover no-repeat;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 60px;
+  color: white;
+  position: relative;
+}
+
+
+.banner-content2 {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.juega-tu-manera {
+  position: relative;
+  background-color: #000;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+  background-image: url('https://shared.fastly.steamstatic.com/community_assets/images/items/3159330/9795d930bc841a24c9a46d4c954759f67fb830a8.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.juega-tu-manera h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.juega-tu-manera p {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.personajes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.personaje {
+  background-color: #0f0f0f;
+  border-radius: 1px;
+  width: 310px;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.personaje img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.personaje h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 15px 20px 5px 20px;
+}
+
+.personaje p {
+  font-size: 0.9rem;
+  color: #d3d3d3;
+  margin: 0 20px 20px 20px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .personajes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personaje {
+    width: 90%;
+  }
+}
+
+
+
+.contenido-adicional {
+  background-color: #0b0b0b;
+  padding: 50px 10px;
+  color: #fff;
+}
+
+.contenido-adicional h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 35px;
+  text-align: left;
+  width: 90%;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dlc-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 90%;
+  max-width: 1200px; 
+  margin: 0 auto;
+}
+
+.dlc-item {
+  position: relative; 
+  display: flex;
+  align-items: stretch;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 220px; 
+}
+
+.dlc-item:hover {
+  background-color: #222;
+}
+
+.dlc-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.dlc-info {
+  flex: 1;
+  text-align: left;
+  padding: 25px 20px 60px 15px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.dlc-info .tipo {
+  color: #aaa;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.dlc-info h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 5px 0 10px;
+}
+
+.dlc-info p {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.dlc-precio {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .dlc-item {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .dlc-img {
+    width: 100%;
+    flex: none;
+  }
+  .dlc-precio {
+    position: static;
+    align-self: flex-end;
+    margin: 10px 15px 0 auto;
+  }
+}
+
+
+.seccion-cinematica {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 600px; 
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.texto-banner {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.65); 
+  padding: 30px 40px;
+  border-radius: 4px;
+  max-width: 500px;
+  color: #fff;
+}
+
+.texto-banner h2 {
+  font-size: 1.9rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.texto-banner p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.texto-banner.derecha {
+  left: auto;
+  right: 50px;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .banner {
+    height: 450px;
+  }
+
+  .texto-banner,
+  .texto-banner.derecha {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 25px 20px;
+    width: 85%;
+  }
+
+  .texto-banner h2 {
+    font-size: 1.3rem;
+  }
+
+  .texto-banner p {
+    font-size: 0.9rem;
+  }
+
+}

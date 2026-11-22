@@ -1,0 +1,731 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(12, 12, 12); 
+}
+.Nav{
+    display:grid;
+    background-color: rgb(0, 0, 0);
+    grid-template-areas: "logo Menu Menu2";
+    grid-template-columns: 0.8fr 5fr 2fr;
+    align-items:center;
+    padding:0 30px;
+}
+.logo{
+    display:flex; 
+    justify-content:center; 
+    align-items:center;
+}
+.logo img{
+    height: 3em;
+}
+.Menu{
+    display:flex; 
+    gap:20px 2px; 
+    align-items:center;
+}
+
+.Menu a{
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    align-content: center;
+    color: rgb(227, 229, 230);
+    padding: 20px 40px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 800; 
+}
+
+.Menu a:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.Menu2{
+    display:flex; 
+    align-items:center; 
+    gap:20px; 
+    padding:0 16px;
+}
+.Menu2 img{
+    height:3em;
+    display: block;
+    color: rgb(177, 169, 169);
+
+}
+.Menu2 a{
+    list-style:none;
+    display:flex; 
+    align-items:center;
+    white-space:nowrap;
+    text-decoration: none;
+    color: rgb(227, 229, 230);
+    font-family: 'Arial', sans-serif;
+    font-weight: 800; 
+}
+.Banner{
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 6px 50px;
+    background:
+    linear-gradient(to left,  rgba(12,12,12,0) 83%, rgb(12,12,12) 100%),
+    linear-gradient(to bottom, rgba(12,12,12,0) 92%, rgb(12,12,12) 100%),
+    rgb(22,22,22);
+}
+
+.Banner img{
+    order: 2;
+    width: 100%;
+    height: 100%;
+    margin: 5px ; 
+    border-radius: 11px;
+}
+.Bannerinfo {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center; 
+    background-color: rgb(22, 23, 23);
+    width: 88%; 
+    gap: 30px;
+    border-radius: 11px;
+    overflow: hidden;
+    padding: 0vh 3%;
+}
+
+.Bannerinfo button{
+    background-color:rgb(0, 104, 202);
+    padding: 1rem 1rem;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+    color: rgb(227, 229, 230);
+    font-family: 'Arial', sans-serif;
+    font-weight: 780; 
+}
+
+.Bannerinfo button:hover{
+    background-color: rgb(4, 83, 156);
+}
+
+.Bannerinfo h2{
+    font-size: 25px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.Bannerinfo p{
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgb(139, 142, 145);
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 800;
+}
+
+.BannerAbajo{
+    width: 88%; 
+    margin: 0 auto 16px; 
+    padding: 5vh 3%;
+}
+
+.ProductosMini{
+    max-width: 1450px; 
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 10px;
+}
+
+.CardMini{
+    background-color: rgb(36,34,34);
+    border-radius: 10px;
+    align-items: flex-start;
+    overflow: hidden;
+    display: flex;
+    gap: 5px;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.CardMini:hover{
+    background-color: rgb(43,41,41);
+}
+
+.CardMini .thumb{
+    position: relative;
+    width: 25px;
+    min-width: 130px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.CardMini .thumb img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.CardMini p{
+    font-size: 10px;
+    color: rgb(139, 142, 145);
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 800;
+}
+.CardMini h4{
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.Banner2{
+    position: relative;
+    gap: 30px; 
+    width: 93%;             
+    margin: 0 auto 24px;     
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+
+.Banner2 img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.Banner2info{ 
+    position: absolute;
+    inset: 0;                        
+    display: flex;
+    align-items: center;            
+    padding: 10px 2%;               
+    max-width: 45%;    
+}
+
+.Banner2info h2{
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.Banner2info p{
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.Banner2info button{
+    background-color:rgb(0, 104, 202);
+    padding: 1rem 1rem;
+    font-size: 16px;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.Banner2info button:hover{ 
+    background-color: rgb(4, 83, 156);
+}
+
+
+/*tienda */
+.Tienda h2{
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600; 
+    font-size: 24px;
+    padding: 3vh 3vw;
+    margin-top: 45px;    
+}
+
+.Productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); 
+    gap: 20px;  
+    padding: 0 40px; 
+}
+
+/*link para la otra pagina*/
+.Card-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+.Card {
+  background-color: rgb(36, 34, 34);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  display: flex;           
+  flex-direction: column;     
+}
+
+.Card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Card h3, .Card p, .precios {
+  padding: 0 8px;
+}
+
+.Card h3, .Card p {
+  white-space: nowrap;        
+  overflow: hidden;
+  text-overflow: ellipsis;    
+}
+
+.Card h3 {
+  color: #fff;
+  font-size: 15px;
+  margin: 8px 0;
+  text-align: left;
+}
+
+.Card p {
+  color: #ccc;
+  font-size: 14px;
+  margin: 0 0 8px 0;
+}
+
+.precios {
+  text-align: right;
+  margin-top: auto;   
+  padding-bottom: 10px;
+}
+
+.descuento {
+  background: #d43c2f;
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-right: 6px; 
+}
+
+.vij {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+}
+
+.nue {
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 4px;
+  text-align: right;  
+}
+
+/* universo ubisoft */
+.vistau-card {
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: left;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  padding: 10px; 
+}
+
+.viscont {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); 
+  gap: 0.2rem;   
+  padding: 0 10px;
+}
+
+.vistau-card img {
+  width: 100%;
+  height: auto;        
+  border-radius: 8px;
+}
+
+.vistau h2 {
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600; 
+    font-size: 25px;
+    padding: 2vh 2vw;
+    margin-top: 45px;
+}
+
+.vistau-card h3 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+/* juegos gratis */
+.juegos {
+  font-family: 'Arial', sans-serif;
+  padding: 0 40px;
+}
+
+.juegos h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 45px;
+}
+
+.Productos4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.Card2 {
+  background-color: rgb(36, 34, 34);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.Card2 img {
+  width: 100%;
+  display: block;
+}
+
+.Card2 div {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.Card2 p {
+  color: #909090;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.Card2 h3 {
+  color: #fff;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.Card2 button {
+  background-color: rgb(1, 102, 255);
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: auto;
+}
+.Card2 button:hover{
+    background-color: rgb(4, 83, 156);
+}
+
+
+.juegos a {
+  color: #1e90ff;
+  font-size: 16px;
+  margin-left: 10px;
+} 
+
+
+/* noticias */
+.noticias {
+  font-family: 'Arial', sans-serif;
+  padding: 0 40px;
+}
+
+.noticias h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 45px;
+}
+
+.Productos5 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.Card5 {
+  background-color: rgb(36, 34, 34);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  font-weight: 800;
+  height: auto;
+  text-align: left;
+}
+
+.Card5 img {
+  width: 100%;
+  display: block;
+}
+
+.Card5 div {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.Card5 p {
+  color: #7d7979;
+  font-size: 14px;
+  margin: 8px 0;
+  
+}
+
+.Card5 h3 {
+  color: #fff;
+  font-size: 16px;
+  margin: 8px 0;
+  
+}
+
+.Card5 h4 {
+  color: #777777;
+  font-size: 14px;
+  margin: 8px 0;
+}
+
+.Card5 h5 {
+  color: #696666;
+  font-size: 13px;
+  padding: 0 8px;
+  margin-top: 2px;
+}
+
+
+.Card5 h3, 
+.Card5 p {
+  max-height: 2.8em;      
+  overflow: hidden;       
+  text-overflow: ellipsis; 
+}
+
+.noticias a {
+  color: #1e90ff;
+  font-size: 16px;
+  margin-left: 10px;
+} 
+
+.Card5,.Card5 h3,.Card5 p {
+  text-align: left;
+}
+
+
+
+/* FOOTER */
+
+.banner-conectar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background:linear-gradient(90deg, #0f0f1a 0%, #102430 100%);
+  border-radius: 12px;
+  padding: 40px;
+  margin: 40px auto;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.banner-texto h2 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.banner-texto p {
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.button-conectar {
+  background: #0078ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-conectar:hover {
+  background: rgb(1, 102, 255);
+}
+
+.banner-imagen img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(130, 0, 255, 0.7);
+}
+
+.footer {
+  background: #1b1b1b;
+  color: #ccc;
+  padding: 12px 25px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-social {
+  background: #000;
+  margin-bottom: 20px;
+  background: #0e0e0e;
+  padding: 10px;
+}
+
+.footer-social p {
+  color: #aaa;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.social-iconos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-iconos img {
+  width: 28px;
+  height: 28px;
+  filter: invert(1);
+  transition: transform 0.2s;
+}
+
+.footer-menu {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 40px;
+  padding-top: 30px;
+  border-top: 1px solid #333;
+}
+
+.footer-izquierda {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ubi-logo {
+  width: 120px;
+}
+
+.button-download {
+  background: #3a3939;
+  border: 2px solid #3a3939;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 1000;
+  transition: 0.2s;
+}
+
+.button-download:hover {
+  background: rgb(119, 118, 118);
+  color: rgb(255, 255, 255);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links h4 {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #777;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.footer-links a:hover {
+  color: rgb(83, 75, 75);
+}
+.footer-derecha {
+  text-align: right;
+  font-size: 13px;
+}
+
+.idioma {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.legal {
+  font-size: 11px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.Card img,
+.Card2 img,
+.Card5 img,
+.vistau-card img,
+.ProductosMini img,
+.Banner2 img {
+  transition: transform 0.4s ease; 
+}
+
+.Card:hover img,
+.Card2:hover img,
+.Card5:hover img,
+.vistau-card:hover img,
+.ProductosMini .CardMini:hover img,
+.Banner2:hover img {
+  transform: scale(1.05); 
+}
